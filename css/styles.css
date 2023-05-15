@@ -162,6 +162,9 @@ select:-webkit-autofill:focus {
   margin-right: 0px;
 }
 .nav-link {
+  color: ;
+  text-decoration: none;
+  text-transform: capitalize;
 }
 .nav-link:hover {
 }
@@ -171,7 +174,11 @@ select:-webkit-autofill:focus {
 }
 .search-input {
 }
-
+.hero-background{
+  background-image: url(../img/intro-bg.png);
+  background-repeat: no-repeat;
+  background-position: right 0px;
+}
 .header-hero {
   display: flex;
   justify-content: space-betweesn;
@@ -195,17 +202,7 @@ select:-webkit-autofill:focus {
 .left-border-text{
   
 }
-.header-hero-right {
-  width: 587px;
-  height: 547px;
-}
-.header-hero-right > .right-img {
-  margin-left: 150px;
-  height: 565px;
-  background-image: url(../img/intro-bg.png);
-  background-position: ;
-  background-repeat: no-repeat;
-}
+
 /* MAIN-CONTENT */
 .main-content {
   flex-grow: 1;
