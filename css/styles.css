@@ -52,7 +52,16 @@
 }
 /* GLOBAL ROOT */
 :root {
-  --roboto: "Roboto";
+  --bn-roboto: "Roboto";
+  --bn-white: #ffffff;
+  --bn-black: #000000;
+  --bn-oreng: #ea625c;
+  --bn-secondary: #222222;
+  --bn-secondary-one: #333333;
+  --bn-secondary-two: #777777;
+  --bn-secondary-three: #888888;
+  --bn-secondary-fift: #666666;
+  --bn-dcolor: #dddddd;
 }
 /* GLOBAL */
 html {
@@ -78,11 +87,6 @@ body {
   line-height: 1.5;
   background-color: #fff;
   color: #222;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
 }
 
 /* AUTOFILL-STYLES */
@@ -125,8 +129,8 @@ select:-webkit-autofill:focus {
 .container {
   width: 100%;
   max-width: 1300px;
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 50px;
+  padding-right: 50px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -162,28 +166,46 @@ select:-webkit-autofill:focus {
   margin-right: 0px;
 }
 .nav-link {
-  color: ;
+  font-family: var(--bn-roboto);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 150%;
+  color: var(--bn-secondary-one);
   text-decoration: none;
   text-transform: capitalize;
+  transition: all 0.8s ease;
 }
 .nav-link:hover {
+  color: var(--bn-oreng);
+  cursor: pointer;
 }
 .nav-link:active {
+  color: var(--bn-dcolor);
 }
 .search-bar {
+  width: 174px;
+  border-bottom: 1px solid var(--bn-secondary-three);
 }
 .search-input {
+  width: 177px;
+  font-family: var(--bn-roboto);
+  font-weight: 400;
+  font-size: 16px;
+  text-align: left;
+  border: none;
+  outline: none;
 }
-.hero-background{
+.hero-background {
   background-image: url(../img/intro-bg.png);
   background-repeat: no-repeat;
   background-position: right 0px;
+  border-bottom: 1px solid var(--bn-secondary-fift);
 }
 .header-hero {
   display: flex;
   justify-content: space-betweesn;
   width: 100%;
-  height: 700px;
+  height: 565px;
 }
 .header-hero-left {
   width: 490px;
@@ -199,15 +221,178 @@ select:-webkit-autofill:focus {
   --bn-black: #000000;
   text-transform: capitalize;
 }
-.left-border-text{
-  
+.left-border-text {
+  margin-bottom: 30px;
+  border-left: 3px solid var(--bn-secondary-three);
+}
+.header-hero__paragriph {
+  margin-left: 40px;
+  font-family: var(--bn-roboto), serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  /* or 24px */
+
+  color: #777777;
+}
+.header-hero__btn {
+  padding: 12px 38.5px;
+  font-family: var(--bn-roboto), sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--bn-white);
+  background-color: var(--bn-oreng);
 }
 
 /* MAIN-CONTENT */
-.main-content {
-  flex-grow: 1;
+.main {
+  height: 100vw;
+}
+.content {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.text-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
 }
 
+.text-content-flex {
+  width: 280px;
+  margin-right: 80px;
+}
+.text-content-flex:last-child {
+  margin-right: 0px;
+}
+
+.text-content-heading {
+  font-family: var(--bn-roboto);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--bn-secondary);
+  text-transform: uppercase;
+}
+.text-content-paragriph {
+  font-family: var(--bn-roboto);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  color: var(--bn-secondary-one);
+}
+.divader {
+  display: flex;
+  align-items: center;
+}
+.divader div {
+  background-color: var(--bn-dcolor);
+  width: 8px;
+  height: 8px;
+  margin-right: 10px;
+}
+.divader div:last-child {
+  margin-right: 0px;
+}
+.learn-more-link {
+  font-family: var(--bn-roboto) serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+  color: var(--bn-oreng);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.nike {
+  height: 739px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.nike-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nike-left {
+  width: 490px;
+  height: 387px;
+}
+.nike-heading {
+  font-family: var(--bn-roboto);
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 120%;
+  color: #000000;
+}
+.nike-our {
+  width: 450px;
+  border-left: 3px solid #888;
+  margin-bottom: 30px;
+}
+.nike-paragriph {
+  font-family: var(--bn-roboto);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--bn-secondary-two);
+  padding-left: 30px;
+}
+.nike-btn {
+  padding: 12px 90px;
+  background-color: var(--bn-oreng);
+  font-family: var(--bn-roboto);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--bn-white);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* Footer style section */
+.footer {
+  height: 900px;
+  background-image: url(../img/runners-1.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.content-footer {
+  width: 490px;
+  height: 351px;
+  margin-top: 240px;
+  margin-left: 635px;
+  margin-bottom: 239.19px;
+  margin-right: 125px;
+}
+.content-footer-heading {
+  font-family: var(--bn-roboto) serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 120%;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+.white {
+  border-color: var(--bn-white);
+  color: var(--bn-white);
+}
+
+.btn-footer {
+  padding: 12px 46px;
+  font-family: var(--bn-roboto);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: var(--bn-oreng);
+  color: #ffffff;
+  text-decoration: none;
+}
+/* Media only section */
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min--moz-device-pixel-ratio: 2),
   only screen and (-o-min-device-pixel-ratio: 2/1),
